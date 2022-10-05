@@ -11,3 +11,11 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+.banner_btn {
+    @apply px-8 py-2 rounded flex flex-row items-center
+}
+
+.banner_shadow {
+    @apply h-[300px] w-full absolute 
+}

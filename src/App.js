@@ -12,6 +12,13 @@ function App() {
       <Banner />
 
       <MovieList />
+      <MovieList />
+      <MovieList />
+      <MovieList />
+      <MovieList />
+      <MovieList />
+      <MovieList />
+      <MovieList />
 
       <Footer />
     </>
