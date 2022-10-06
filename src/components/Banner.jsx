@@ -1,24 +1,18 @@
 import React, { useEffect, useState } from "react";
-
 import { FaPlay } from "react-icons/fa";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+
 import axios from "../api/axios";
+import requests from "../api/Requests";
 
 function Banner() {
   const [banner, setBanner] = useState([]);
-  const IMAGE_URL = "https://image.tmdb.org/t/p/original/";
-  const API_KEY = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
     async function getBanner() {
-      const request = await axios.get(
-        `discover/tv?api_key=${API_KEY}&with_networks=213`
-      );
-      setBanner(
-        request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1)
-        ]
-      );
+      const request = await axios.get(requests.fetchNetflix);
+      const data = request.data.results;
+      setBanner(data[Math.floor(Math.random() * data.length - 1)]);
       return request;
     }
     getBanner();
@@ -28,14 +22,14 @@ function Banner() {
     <div
       className="h-screen bg-black text-gray-100 banner relative z-10"
       style={{
-        backgroundImage: `url(${IMAGE_URL}${banner?.backdrop_path})`,
+        backgroundImage: `url(${requests.fetchImage}${banner?.backdrop_path})`,
       }}
     >
-      <div className="banner_shadow top-0 left-0 bg-gradient-to-b from-black" />
+      <div className="banner_shadow h-[200px] top-0 left-0 bg-gradient-to-b from-black" />
       <div className="px-12 py-2 flex items-center h-full">
         <div className="flex flex-col space-y-12 p-2">
           <div className="">
-            <h1 className="font-bold text-6xl">{banner.name}</h1>
+            <h1 className="font-bold text-6xl max-w-lg">{banner.name}</h1>
             <p className="max-w-xl text-lg mt-4">{banner.overview}</p>
           </div>
           <div className="flex flex-row space-x-6 text-xl">
@@ -50,7 +44,7 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="banner_shadow bottom-0 left-0 bg-gradient-to-t from-black" />
+      <div className="banner_shadow h-[300px] bottom-0 left-0 bg-gradient-to-t from-black" />
     </div>
   );
 }

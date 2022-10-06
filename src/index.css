@@ -17,5 +17,5 @@ body {
 }
 
 .banner_shadow {
-    @apply h-[300px] w-full absolute 
+    @apply w-full absolute 
 }
