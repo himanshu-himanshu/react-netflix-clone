@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background-color: black;
+    background-color: #0E0E0E;
 }
 
 .banner {
@@ -19,3 +19,16 @@ body {
 .banner_shadow {
     @apply w-full absolute 
 }
+
+.movieList {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.movieList::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
