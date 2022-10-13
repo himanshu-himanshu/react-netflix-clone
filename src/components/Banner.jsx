@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
-import axios from "../api/axios";
+import axios from "../api/axios/axios";
 import requests from "../api/Requests";
 
 function Banner() {
