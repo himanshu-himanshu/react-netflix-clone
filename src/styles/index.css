@@ -37,11 +37,11 @@ body {
 }
 
 .auth-shadow {
-    @apply absolute full top-0 left-0 bg-black opacity-70 -z-20
+    @apply absolute full top-0 left-0 bg-black/70 -z-20
 }
 
 .login-input {
-    @apply bg-darkGrey p-4 rounded-sm 
+    @apply bg-darkGrey p-4 rounded-sm text-gray-200
 }
 
 .movie-list {
