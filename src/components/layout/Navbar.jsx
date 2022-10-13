@@ -61,9 +61,9 @@ function Navbar() {
         </ul>
       </div>
       <div className="flex flex-row items-center space-x-6 text-gray-100">
-        <HiSearch className="text-gray-100 h-6 w-6" />
+        <HiSearch className="nav-icons" />
         <span className="font-extralight text-sm">Kids</span>
-        <GoBell className="text-gray-100 h-6 w-6" />
+        <GoBell className="nav-icons" />
         <Link to="/profile">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"

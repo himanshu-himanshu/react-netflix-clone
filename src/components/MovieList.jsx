@@ -26,7 +26,7 @@ function MovieList({ title, url, wide, shadow, top }) {
       <h1 className="text-2xl py-4 mx-4 font-semibold -mb-10 tracking-wide">
         {title}
       </h1>
-      <div className="movieList flex flex-row h-full py-10">
+      <div className="movie-list flex flex-row h-full py-10">
         {movies.map((movie) => (
           <img
             src={`${requests.fetchImage}${

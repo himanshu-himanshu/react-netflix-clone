@@ -12,6 +12,14 @@ body {
     background-size: cover;
 }
 
+.full {
+    @apply h-full w-full
+}
+
+.flex-center {
+    @apply flex items-center justify-center 
+}
+
 .banner_btn {
     @apply px-8 py-2 rounded flex flex-row items-center
 }
@@ -20,11 +28,31 @@ body {
     @apply w-full absolute
 }
 
-.movieList {
+.auth-outer-div {
+    @apply min-h-screen banner relative z-20 text-[#4f4e4e]
+}
+
+.auth-logo-div {
+    @apply w-full h-[10%] px-12 py-6
+}
+
+.auth-shadow {
+    @apply absolute full top-0 left-0 bg-black opacity-70 -z-20
+}
+
+.login-input {
+    @apply bg-darkGrey p-4 rounded-sm 
+}
+
+.movie-list {
     overflow-x: scroll;
 }
 
-.movieList::-webkit-scrollbar {
+.nav-icons {
+    @apply text-gray-100 h-6 w-6
+}
+
+.movie-list::-webkit-scrollbar {
     display: none;
 }
 
@@ -34,4 +62,4 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
-  }
+}

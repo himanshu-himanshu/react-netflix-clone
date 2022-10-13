@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layout/Navbar";
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
+import Footer from "../components/layout/Footer";
 import MovieList from "../components/MovieList";
 
 import requests from "../api/Requests";

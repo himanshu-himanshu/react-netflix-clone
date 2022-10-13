@@ -1,16 +1,12 @@
-import React from "react";
+import Logo from "./Logo";
 
 function Registration() {
   return (
-    <div className="background min-h-screen banner relative z-20 text-[#4f4e4e]">
-      <div className="w-full h-[10%] px-12 py-6 flex flex-row justify-between">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
-          alt=""
-          className="h-6 lg:h-14"
-        />
+    <div className="auth-outer-div background">
+      <div className="auth-logo-div flex flex-row justify-between">
+        <Logo />
         <div className="text-white">
-          <button className="px-6 py-2 bg-black border border-gray-100 opacity-80  rounded-sm">
+          <button className="px-6 py-2 bg-black border border-gray-100 opacity-80 rounded-sm">
             English
           </button>
           <a
@@ -21,13 +17,13 @@ function Registration() {
           </a>
         </div>
       </div>
-      <div className="absolute w-full h-full top-0 left-0 bg-black opacity-70 -z-20" />
+      <div className="auth-shadow" />
 
-      <div className="mt-[10%] text-gray-200 max-w-2xl mx-auto flex flex-col space-y-6 items-center justify-center">
-        <h1 className="text-7xl font-semibold">
+      <div className="mt-[10%] text-gray-200 max-w-2xl mx-auto flex-center flex-col space-y-6">
+        <h1 className="text-7xl font-semibold text-center">
           Unlimited movies, TV shows, and more.
         </h1>
-        <h1 className="text-2xl">Watch anywhere. Cancel anytime.</h1>
+        <h1 className="text-3xl">Watch anywhere. Cancel anytime.</h1>
         <h1 className="text-xl">
           Ready to watch? Enter your email to create or restart your membership
           .
