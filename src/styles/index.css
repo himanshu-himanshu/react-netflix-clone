@@ -37,7 +37,7 @@ body {
 }
 
 .auth-shadow {
-    @apply absolute full top-0 left-0 bg-black/70 -z-20
+    @apply absolute full top-0 left-0 -z-20 bg-black/70
 }
 
 .login-input {

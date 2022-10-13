@@ -15,14 +15,13 @@ function Login() {
     }
   };
   return (
-    <div className="background auth-outer-div">
+    <div className="bg-black background auth-outer-div">
       <div className="auth-logo-div">
         <Logo />
       </div>
       <div className="auth-shadow" />
-
-      <div className="full flex-center ">
-        <div className="flex flex-col w-[30%] h-[90%] rounded px-16 py-12 relative z-40">
+      <div className="full flex-center">
+        <div className="flex flex-col w-[90%] sm:w-[70%] md:w-[50%] lg:w-[40%] max-w-md h-[90%] rounded px-16 py-12 relative z-40">
           <div className="auth-shadow" />
           <h1 className="text-4xl text-white font-bold mb-8">Sign In</h1>
           <input
