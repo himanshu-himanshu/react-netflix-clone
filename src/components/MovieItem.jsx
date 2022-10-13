@@ -1,5 +1,5 @@
 import React from "react";
-import requests from "../api/Requests";
+import requests from "../utilities/Requests";
 
 function MovieItem({ data }) {
   return (

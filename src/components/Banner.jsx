@@ -3,7 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 import axios from "../api/axios/axios";
-import requests from "../api/Requests";
+import requests from "../utilities/Requests";
 
 function Banner() {
   const [banner, setBanner] = useState([]);

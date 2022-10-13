@@ -57,7 +57,7 @@ body {
 }
 
 .background  {
-    background-image: url(./assets/backgrounds/background.png);
+    background-image: url(../assets/backgrounds/background.png);
 }
 
 ::-webkit-scrollbar {

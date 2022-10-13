@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 import Footer from "../components/layout/Footer";
 import MovieList from "../components/MovieList";
 
-import requests from "../api/Requests";
+import requests from "../utilities/Requests";
 
 function Homepage() {
   return (
