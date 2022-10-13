@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import { HiSearch } from "react-icons/hi";
 import { GoBell } from "react-icons/go";
@@ -63,11 +64,13 @@ function Navbar() {
         <HiSearch className="text-gray-100 h-6 w-6" />
         <span className="font-extralight text-sm">Kids</span>
         <GoBell className="text-gray-100 h-6 w-6" />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-          alt=""
-          className="w-8 rounded"
-        />
+        <Link to="/profile">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+            alt=""
+            className="w-8 rounded"
+          />
+        </Link>
       </div>
     </div>
   );

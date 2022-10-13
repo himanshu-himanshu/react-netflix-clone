@@ -27,6 +27,7 @@ function Banner() {
       }}
     >
       <div className="banner_shadow h-[200px] top-0 left-0 bg-gradient-to-b from-[#0E0E0E]" />
+      <div className="banner_shadow h-full w-[300px] top-0 left-0 bg-gradient-to-r from-[#0E0E0E] -z-20" />
       <div className="px-12 py-2 flex items-center h-full">
         <div className="flex flex-col space-y-12 p-2">
           <div className="">

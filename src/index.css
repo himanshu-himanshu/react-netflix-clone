@@ -17,7 +17,7 @@ body {
 }
 
 .banner_shadow {
-    @apply w-full absolute 
+    @apply w-full absolute
 }
 
 .movieList {
@@ -26,6 +26,10 @@ body {
 
 .movieList::-webkit-scrollbar {
     display: none;
+}
+
+.background  {
+    background-image: url(./assets/backgrounds/background.png);
 }
 
 ::-webkit-scrollbar {
